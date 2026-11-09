@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover thoughtfully selected, unbranded fashion bags at EliteBagista.">
+<title>EliteBagista | Everyday Style, Elevated</title>
+<style>
+:root{--ink:#24221f;--muted:#77716a;--cream:#f6f2eb;--sand:#e8dfd2;--gold:#b69a70;--white:#fff;--line:#e8e2d9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+a{color:inherit;text-decoration:none}button,select{font:inherit}.topbar{background:var(--ink);color:#f7f2e9;text-align:center;padding:9px 14px;font-size:11px;letter-spacing:1.5px}
+header{height:76px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
+.logo{font-family:Georgia,serif;font-size:25px;letter-spacing:2px;font-weight:bold}.logo span{color:var(--gold)}
+nav{display:flex;gap:27px;font-size:12px;letter-spacing:1.1px;text-transform:uppercase}.header-actions{display:flex;gap:14px;align-items:center}
+select{border:1px solid var(--line);background:#fff;padding:9px 10px;color:var(--ink);font-size:12px}
+.cart-btn{border:0;background:var(--ink);color:#fff;padding:11px 15px;cursor:pointer;font-size:12px;letter-spacing:.5px}
+.hero{min-height:520px;background:linear-gradient(90deg,rgba(25,23,20,.68),rgba(25,23,20,.08)),linear-gradient(135deg,#817565,#d7c9b6 55%,#eee6da);display:flex;align-items:center;padding:7% 10%;color:#fff}
+.hero-inner{max-width:510px}.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#f0dfc4}.hero h1{font:normal clamp(42px,6vw,70px)/1.04 Georgia,serif;margin:18px 0}.hero p{font-size:15px;line-height:1.8;max-width:420px;color:#f5f0e9}.btn{display:inline-block;background:#fff;color:var(--ink);padding:15px 24px;margin-top:17px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;border:0;cursor:pointer}
+section{padding:76px 7%}.section-head{text-align:center;margin-bottom:38px}.section-head .eyebrow{color:var(--gold)}h2{font:normal 38px Georgia,serif;margin:10px 0}.section-head p{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.product{border:1px solid var(--line);background:#fff}.product-art{height:260px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#eee7dc,#d8cbbb);overflow:hidden;position:relative}
+.product-art:before{content:"";width:130px;height:145px;border-radius:18px 18px 28px 28px;background:linear-gradient(130deg,#9a8067,#4b4037);box-shadow:inset -12px -5px 20px #30282155,0 18px 25px #0002;position:absolute;top:75px}
+.product-art:after{content:"";width:68px;height:55px;border:7px solid #78634e;border-bottom:0;border-radius:45px 45px 0 0;position:absolute;top:40px}
+.art2{background:linear-gradient(145deg,#e8e2d8,#c9b9a7)}.art2:before{background:linear-gradient(130deg,#d9c7aa,#9c8265);border-radius:10px 10px 22px 22px;width:150px;height:120px;top:100px}.art2:after{top:62px;border-color:#a58b6c}
+.art3{background:linear-gradient(145deg,#e9e5df,#bdb6ad)}.art3:before{background:linear-gradient(130deg,#343331,#111);width:145px;height:112px;top:105px;border-radius:12px 12px 24px 24px}.art3:after{top:65px;border-color:#343331}
+.art4{background:linear-gradient(145deg,#eee7df,#cbb6a0)}.art4:before{background:linear-gradient(130deg,#b77f64,#754b3a);width:135px;height:150px;top:78px}.art4:after{border-color:#8c5e49}
+.product-info{padding:17px}.product-info h3{font:normal 17px Georgia,serif;margin:0 0 8px}.product-info p{font-size:12px;color:var(--muted);margin:0 0 13px}.price{font-size:13px;font-weight:bold}.add{float:right;border:1px solid var(--ink);background:#fff;padding:8px 11px;font-size:10px;text-transform:uppercase;letter-spacing:.7px;cursor:pointer}.add:hover{background:var(--ink);color:#fff}
+.promise{background:var(--cream);display:grid;grid-template-columns:repeat(3,1fr);gap:25px;text-align:center;padding:42px 8%}.promise strong{font:normal 19px Georgia,serif}.promise p{font-size:12px;color:var(--muted);line-height:1.6}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:center}.about-art{min-height:330px;background:linear-gradient(140deg,#d8cabb,#f1ece4);display:flex;align-items:center;justify-content:center;font:italic 32px Georgia,serif;color:#766957}.about p{font-size:14px;line-height:1.9;color:var(--muted)}
+footer{background:var(--ink);color:#eee7dc;padding:48px 7% 25px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}.footer-grid p,.footer-grid a{font-size:12px;line-height:2;color:#c9c1b7}.footer-grid h4{font:normal 18px Georgia,serif}.copyright{border-top:1px solid #ffffff22;margin-top:35px;padding-top:20px;font-size:10px;color:#aaa196}
+.drawer{position:fixed;inset:0;background:#0007;z-index:20;display:none;justify-content:flex-end}.drawer.open{display:flex}.panel{background:#fff;width:min(420px,100%);height:100%;padding:25px;overflow:auto}.panel-head{display:flex;justify-content:space-between;align-items:center}.panel h2{font-size:27px}.close{border:0;background:none;font-size:25px;cursor:pointer}.cart-row{border-bottom:1px solid var(--line);padding:15px 0;display:flex;justify-content:space-between;gap:15px;font-size:13px}.qty button{border:1px solid var(--line);background:#fff;padding:3px 8px;cursor:pointer}.checkout{width:100%;padding:15px;background:var(--ink);color:#fff;border:0;margin-top:15px;cursor:pointer;letter-spacing:1px}.small{font-size:11px;color:var(--muted);line-height:1.6}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}nav{display:none}.hero{min-height:440px}.about{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){header{padding:0 4%;height:67px}.logo{font-size:19px}.header-actions{gap:7px}select{padding:8px 5px}.cart-btn{padding:10px}.grid{gap:12px}.product-art{height:190px}.product-art:before{transform:scale(.8)}.product-art:after{transform:scale(.8)}section{padding:55px 5%}.promise{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.hero{padding:12% 7%}}
+</style>
+</head>
+<body>
+<div class="topbar">A THOUGHTFUL EDIT OF EVERYDAY FASHION</div>
+<header>
+  <a class="logo" href="#">ELITE<span>BAGISTA</span></a>
+  <nav><a href="#shop">Shop</a><a href="#about">Our Story</a><a href="#contact">Contact</a></nav>
+  <div class="header-actions">
+    <select id="currency" aria-label="Choose currency"><option value="USD">USD $</option><option value="GBP">GBP £</option><option value="EUR">EUR €</option></select>
+    <button class="cart-btn" onclick="openCart()">BAG (<span id="cart-count">0</span>)</button>
+  </div>
+</header>
+<main>
+<section class="hero">
+ <div class="hero-inner"><div class="eyebrow">THE EVERYDAY COLLECTION</div><h1>Carry your style with confidence.</h1><p>Explore a considered collection of unbranded fashion bags, selected to complement your everyday wardrobe.</p><a class="btn" href="#shop">Explore the collection</a></div>
+</section>
+<section id="shop">
+ <div class="section-head"><div class="eyebrow">SHOP THE EDIT</div><h2>Find your everyday favourite</h2><p>Simple silhouettes. Versatile styling. Your own way to wear them.</p></div>
+ <div class="grid" id="products"></div>
+</section>
+<div class="promise">
+ <div><strong>Considered Styles</strong><p>Versatile designs selected for everyday outfits.</p></div>
+ <div><strong>Worldwide Enquiries</strong><p>Ask us about delivery options to your destination.</p></div>
+ <div><strong>Here to Help</strong><p>Questions about a style? Get in touch before ordering.</p></div>
+</div>
+<section id="about" class="about">
+ <div class="about-art">Style, simply.</div>
+ <div><div class="eyebrow" style="color:var(--gold)">A LITTLE ABOUT US</div><h2>Meet EliteBagista</h2><p>EliteBagista is a fashion destination for unbranded bags and effortless everyday styling. We believe accessories should feel personal, versatile and easy to make your own.</p><p>Have a question about a product or delivery? Send us a message and we’ll be happy to help.</p></div>
+</section>
+</main>
+<footer id="contact">
+ <div class="footer-grid">
+  <div><div class="logo" style="color:#fff">ELITE<span>BAGISTA</span></div><p>Everyday fashion, thoughtfully selected.</p></div>
+  <div><h4>Explore</h4><a href="#shop">Shop collection</a><br><a href="#about">Our story</a></div>
+  <div><h4>Customer care</h4><a href="mailto:hello@elitebagista.com">Email us</a><br><a href="#contact">Shipping enquiries</a></div>
+ </div>
+ <div class="copyright">© <span id="year"></span> EliteBagista. All rights reserved. Product images and prices shown are sample placeholders and must be replaced before launch.</div>
+</footer>
+<div class="drawer" id="drawer" onclick="if(event.target===this)closeCart()">
+ <div class="panel"><div class="panel-head"><h2>Your bag</h2><button class="close" onclick="closeCart()">×</button></div><div id="cart-items"></div><div style="display:flex;justify-content:space-between;margin-top:20px;font-weight:bold"><span>Subtotal</span><span id="subtotal">$0.00</span></div><p class="small">Shipping and final delivery costs are confirmed separately. This starter store does not process online payments.</p><button class="checkout" onclick="checkout()">SEND ORDER ENQUIRY</button></div>
+</div>
+<script>
+const products=[
+ {id:1,name:"The Everyday Tote",desc:"A versatile carryall silhouette",usd:48,art:""},
+ {id:2,name:"The Soft Shoulder Bag",desc:"An easy choice for day-to-day styling",usd:56,art:"art2"},
+ {id:3,name:"The Minimal Crossbody",desc:"A compact hands-free style",usd:42,art:"art3"},
+ {id:4,name:"The City Top-Handle",desc:"A structured everyday accent",usd:64,art:"art4"}
+];
+const rates={USD:1,GBP:0.78,EUR:0.92},symbols={USD:"$",GBP:"£",EUR:"€"};
+let cart={};
+function money(v){let c=document.getElementById("currency").value;return symbols[c]+(v*rates[c]).toFixed(2)}
+function renderProducts(){document.getElementById("products").innerHTML=products.map(p=>`<article class="product"><div class="product-art ${p.art}"></div><div class="product-info"><h3>${p.name}</h3><p>${p.desc}</p><span class="price">${money(p.usd)}</span><button class="add" onclick="add(${p.id})">Add to bag</button></div></article>`).join("")}
+function add(id){cart[id]=(cart[id]||0)+1;renderCartCount()}
+function renderCartCount(){document.getElementById("cart-count").textContent=Object.values(cart).reduce((a,b)=>a+b,0)}
+function renderCart(){let entries=products.filter(p=>cart[p.id]);document.getElementById("cart-items").innerHTML=entries.length?entries.map(p=>`<div class="cart-row"><div><strong>${p.name}</strong><br>${money(p.usd)} each<br><div class="qty"><button onclick="changeQty(${p.id},-1)">−</button> ${cart[p.id]} <button onclick="changeQty(${p.id},1)">+</button></div></div><strong>${money(p.usd*cart[p.id])}</strong></div>`).join(""):'<p class="small">Your bag is empty. Explore the collection to add a style.</p>';let total=entries.reduce((s,p)=>s+p.usd*cart[p.id],0);document.getElementById("subtotal").textContent=money(total)}
+function changeQty(id,n){cart[id]=(cart[id]||0)+n;if(cart[id]<=0)delete cart[id];renderCartCount();renderCart()}
+function openCart(){renderCart();document.getElementById("drawer").classList.add("open")}
+function closeCart(){document.getElementById("drawer").classList.remove("open")}
+function checkout(){let entries=products.filter(p=>cart[p.id]);if(!entries.length){alert("Your bag is empty.");return}let lines=entries.map(p=>`${p.name} x ${cart[p.id]} — ${money(p.usd*cart[p.id])}`).join("%0D%0A");let total=entries.reduce((s,p)=>s+p.usd*cart[p.id],0);let c=document.getElementById("currency").value;let body=`Hello EliteBagista,%0D%0A%0D%0AI would like to enquire about:%0D%0A${lines}%0D%0A%0D%0ASubtotal: ${money(total)} (${c})%0D%0A%0D%0AMy delivery country/address is:`;window.location.href=`mailto:hello@elitebagista.com?subject=EliteBagista%20Order%20Enquiry&body=${body}`}
+document.getElementById("currency").addEventListener("change",renderProducts);
+document.getElementById("year").textContent=new Date().getFullYear();renderProducts();
+</script>
+</body></html>
